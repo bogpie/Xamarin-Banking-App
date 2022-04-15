@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Banking312.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout VerticalOptions="Center"
+                 Margin="20,0,20,0">
+        <!-- Place new controls here -->
+
+        <Image Source="walletpng.png" VerticalOptions="Start"/>
+
+        <Entry Placeholder="User"
+               x:Name="userEntry"
+               Keyboard="Default"
+               TextColor="DodgerBlue"
+               Text="bbbbbbbb"/>
+
+        <Entry Placeholder="Password"
+               x:Name="passEntry"
+               IsPassword="True"
+               TextColor="DodgerBlue"
+               Text="bbbbbbbb"
+               />
+
+
+        <Button 
+                x:Name="Login_Button"
+                Margin="0,50,0,0"
+                Text="Log in / Sign Up"
+                Clicked="Login_Button_Clicked"
+                BackgroundColor="DodgerBlue"
+                TextColor="White"
+                
+            />
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Banking312.ExchangePage">
+    <ContentPage.Content>
+        <StackLayout Margin="25,25,25,25">
+
+            <Label Text="Selling" FontAttributes="Italic"/>
+            
+            <Picker x:Name="SellingPicker" Title="" SelectedIndexChanged="SellingPicker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>RON</x:String>
+                    <x:String>EUR</x:String>
+                    <x:String>USD</x:String>
+                    <x:String>Other...</x:String>
+                </Picker.Items>
+
+            </Picker>
+
+            <Label Text="to buy" FontAttributes="Italic"/>
+            <Picker x:Name="BuyingPicker" Title="" SelectedIndexChanged="BuyingPicker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>RON</x:String>
+                    <x:String>EUR</x:String>
+                    <x:String>USD</x:String>
+                    <x:String>Other...</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Text="Calculate Rate" x:Name="CalculateRateButton" Clicked="CalculateRateButton_Clicked"  BackgroundColor="DodgerBlue"
+                TextColor="White" VerticalOptions="EndAndExpand"/>
+            <Label x:Name="RateLabel"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
